@@ -1,0 +1,76 @@
+main {
+  display: flex;
+  width: fit-content;
+  height: auto;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 0 1rem;
+
+}
+
+#dane,
+#wybieranie,
+#wynik {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#dane div {
+  display: flex;
+  width: auto;
+  height: auto;
+  flex-direction: column;
+}
+
+#wizualizacja {
+  font-family: monospace, monospace;
+}
+
+table {
+  table-layout: fixed;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: column;
+  overflow-x: auto;
+  max-width: 100vw;
+}
+
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  padding: .2rem;
+  min-width: 1.5rem;
+}
+
+.innyKolor {
+  background: #bebebe;
+}
+
+@media screen and (max-width: 1024px) {
+  main {
+    margin: auto;
+    width: 70vw;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #dane div {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+  }
+
+  table {
+    padding: 0 .5rem;
+  }
+
+  #wybieranie {
+    align-items: center;
+  }
+}
